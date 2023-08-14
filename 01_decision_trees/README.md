@@ -175,8 +175,8 @@ Implement `IrisTreeTrainer.guess(self)` that returns predictions on the test dat
 ### Part 2.5
 Implement `IrisTreeTrainer.confusion_matrix(self)` that returns the [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) on the test data. You should implement this metric yourself!
 
-## Independent Part
-**Note:** *This is a pre-formulated independent question. In future assignments you will be asked to demonstrate your capability to add relevant insight to your assignment. The work suggested below is examplary of the type of insight you might add in future assignments. To get full marks on this assignment you must complete this independent part.*
+## Independent Part (optional)
+**Note:** *This is a pre-formulated independent question. In future assignments you could be asked to demonstrate your capability to add relevant insight to your assignment. The work suggested below is examplary of the type of insight you might add in future assignments.*
 
 Add a method `IrisTreTrainer.plot_progress()` to the class that plots the accuracy on the test set as a function of training samples. You should start by training on only one sample and end on training on all the training samples.
 
