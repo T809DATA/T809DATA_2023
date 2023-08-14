@@ -150,8 +150,8 @@ Calling `knn_plot_points(d, t, classes, 3)` results in the following image
 Submit yours as `2_5_1.png`.
 
 
-## Independent Part
-**Note:** *This is a pre-formulated independent question. In future assignments you will be asked to demonstrate your capability to add relevant insight to your assignment. The work suggested below is examplary of the type of insight you might add in future assignments. To get full marks on this assignment you must complete this independent part.*
+## Independent Part (optional)
+**Note:** *This is a pre-formulated independent question. In future assignments you could be asked to demonstrate your capability to add relevant insight to your assignment. The work suggested below is examplary of the type of insight you might add in future assignments. You do not need to complete this independent part to get full marks on this assignment.*
 
 
 The [Weighted Nearest Neighbour algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm#The_weighted_nearest_neighbour_classifier) (wkNN) expands on the kNN algorithm by weighing votes.
