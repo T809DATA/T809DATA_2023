@@ -1,5 +1,5 @@
 # K-Nearest Neighbours
-The aim the exercise is to implement the KNN algorithm and evaluated using cross-validation on the Iris data set. The implementation will also be evaluated by comparing it with the scikit-learn implementation.
+The aim of this exercise is to implement the KNN algorithm and evaluate using cross-validation on the Iris data set. The implementation will also be evaluated by comparing it with the scikit-learn implementation.
 
 ## Part 1.
 The first step is to implement the kNN algorithm. The kNN algorithm uses a distance calculation of some sort to determine which points are neighbours.
@@ -23,7 +23,7 @@ $$
 d_n=\sqrt{\sum_{j=1}^D(x_j-x^{train~n}_j)^2}
 $$
 
-wher $x^{train~n}$ is the $n$-th vector in the training set. The outcome of this step is a vector containing all $d_n$.
+where $x^{train~n}$ is the $n$-th vector in the training set. The outcome of this step is a vector containing all the distances $d_n$.
 
 Create a function `euclidian_distance(x, y)` that calculates the euclidian distance between `x` and `y`.
 
@@ -40,7 +40,7 @@ x_target, point_targets = t[0], t[1:]
 
 
 ### Part 1.2
-The kNN algorithm calculates the euclidian distance between a point `x` and all other `points`. Create a new function `euclidian_distances(x, points)` that uses your `euclidian_distance` to perform this calculation.
+The kNN algorithm calculates the Euclidian distance between a point `x` and all other `points`. Create a new function `euclidian_distances(x, points)` that uses your `euclidian_distance` to perform this calculation.
 
 Example inputs and outputs:
 `euclidian_distances(x, points)` -> `[0.53851648 0.50990195 0.64807407 0.14142136 0.6164414  0.51961524 ..., 4.14004831]`
