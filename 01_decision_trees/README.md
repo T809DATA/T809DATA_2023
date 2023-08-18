@@ -1,5 +1,5 @@
 # Assignment 1 - Decision Trees
-The aim project is to implement your own decision tree and then apply it to a dataset.
+The aim of this project is to implement your own decision tree and then apply it to a dataset.
 
 **About the Iris dataset**:
 The dataset contains features a set of four dimensional feature vectors $(x_1,..,x_n)\in \mathbb{R}^4$ and corresponding target classes $(c_1,..,c_n)\in (0, 1, 2)$. The classes correspond to three different types of iris flowers:
