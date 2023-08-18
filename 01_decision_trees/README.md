@@ -24,8 +24,7 @@ $$
 P\{\mathcal{C}_i\}=P\{x\in  \mathcal{C}_i|S_j\}
 $$
 
-So let's start calculating an estimate of $P\{\mathcal{C}_i\}
-$ for the data that we have. At the root node that data is the entire training data set and the estimate is simply the estimate of the a-priori probabilities:
+So let's start calculating an estimate of $P\{\mathcal{C}_i\}$ for the data that we have. At the root node that data is the entire training data set and the estimate is simply the estimate of the a-priori probabilities:
 
 $$
 \hat{P}\{\mathcal{C}_i\}=\frac{\sum_n^N \mathcal{I}(t_n=i)}{N}
@@ -40,7 +39,7 @@ Example inputs and outputs:
 * `prior([0, 2, 3, 3], [0, 1, 2, 3])` -> `[1/4, 0, 1/4, 2/4]`
 
 ### Part 1.2
-Let's assume that we have have made a split and create two data sets for the descendent nodes of the root node. For the sake of argument, let's say the we split so that features with $x_{ik}<\theta$ is in $S_0$ and the other samples are in $S_1$.
+Let's assume that we have made a split and create two data sets for the descendent nodes of the root node. For the sake of argument, let's say that we split so that features with $x_{ik}<\theta$ is in $S_0$ and the other samples are in $S_1$.
 
 Write a function `split_data(features, targets, split_feature_index, theta)` that returns two tuples: `(features_1 targets_1), (features_2, targets_2)` as explained above. Here, `split_feature_index` corresponds to `k`.
 
@@ -58,7 +57,7 @@ features, targets, classes = load_iris()
 
 
 ### Part 1.3
-Now we can calculate entropy, Gini or misclassification impurity. Let's go with Gini impurity.
+Now we can calculate entropy, Gini or misclassification impurity. Let's implement the Gini impurity calculation using:
 
 $$i(S_k)=\frac{1}{2}(1-\sum_iP\{\mathcal{C}_i\}^2)$$
 
