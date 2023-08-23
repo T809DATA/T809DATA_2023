@@ -65,14 +65,16 @@ Each directory might also contain:
 * Directories that contain image, text or any other type of data relevant to the assignment.
 
 ## How to turn in the assignments
-All your code should be turned in as a python script, i.e.
-* A single file with a `.py` ending. Although you can use a  notebook in your development and then port your code over to `template.py` if that suits you.
+All your code should be turned in as a python script, i.e. to Gradescope
+* A single file called `template.py`. Although you can use a notebook in your development and then port your code over to `template.py` if that suits you.
 * The file should contain all the functions with **exactly** the same function names as listed in the assignment description below
 * Use the supplied `template.py` file to fill in your code
 * Plots should be turned in as well. The naming convention for submitted plots is as follows: The Z-th plot under Section X.Y should be turned in as `X_Y_Z.png`
 
 ## Questions based on independent work
-Some assignments will have *independent sections*. In those assignments, the assignment itself counts 80% towards the assignment grade and the independent section 20%. The idea behind the independent questions is to allow you to use your intuition to add relevant insight to your assignment without clear instructions. Examples of this could be for example:
+Some assignments will have *independent sections*. The independent section is optional and will not be graded. 
+The idea behind the independent questions is to allow you to use your intuition to add relevant insight to your assignment without clear instructions. 
+Examples of this could be for example:
 * Test your assignment code on a different dataset.
 * Compare performance across different parameter configurations.
 * Expand your model according to some hypothesis and compare performance to base model
