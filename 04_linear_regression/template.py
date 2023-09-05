@@ -35,11 +35,11 @@ def mvn_basis(
     * fi - [NxM] is the basis function vectors containing a basis function
     output fi for each data vector x in features
     '''
-    ...
+    pass
 
 
 def _plot_mvn():
-    ...
+    pass
 
 
 def max_likelihood_linreg(
@@ -57,7 +57,7 @@ def max_likelihood_linreg(
 
     Output: [Mx1], the maximum likelihood estimate of w for the linear model
     '''
-    ...
+    pass
 
 
 def linear_model(
@@ -78,4 +78,4 @@ def linear_model(
 
     Output: [Nx1] The prediction for each data vector in features
     '''
-    ...
+    pass

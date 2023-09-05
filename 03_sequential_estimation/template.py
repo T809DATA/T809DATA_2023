@@ -20,7 +20,7 @@ def gen_data(
     '''Generate n values samples from the k-variate
     normal distribution
     '''
-    ...
+    pass
 
 
 def update_sequence_mean(
@@ -30,26 +30,30 @@ def update_sequence_mean(
 ) -> np.ndarray:
     '''Performs the mean sequence estimation update
     '''
-    ...
+    pass
 
 
 def _plot_sequence_estimate():
-    data = ...
+    data = None # Set this as the data
     estimates = [np.array([0, 0, 0])]
     for i in range(data.shape[0]):
-        ...
+        """
+            your code here
+        """
     plt.plot([e[0] for e in estimates], label='First dimension')
-    ...
+    """
+        your code here
+    """
     plt.legend(loc='upper center')
     plt.show()
 
 
 def _square_error(y, y_hat):
-    ...
+    pass
 
 
 def _plot_mean_square_error():
-    ...
+    pass
 
 
 # Naive solution to the independent question.
@@ -62,9 +66,9 @@ def gen_changing_data(
     var: float
 ) -> np.ndarray:
     # remove this if you don't go for the independent section
-    ...
+    pass
 
 
 def _plot_changing_sequence_estimate():
     # remove this if you don't go for the independent section
-    ...
+    pass
