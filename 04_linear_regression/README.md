@@ -16,8 +16,9 @@ In this assignment we will be using a altered version of the Iris dataset were w
 
 ## Section 1
 We are going to use the Gaussian basis functions to predict real valued target variables of our data.
+
 $$
-\phi_k(x) = \frac{1}{(2\pi)^{D/2}} \frac{1}{|\Sigma_k|^{1/2}} e^{-\frac{1}{2} (x-\mu_k)^T \Sigma_k^{-1} (x-\mu_k)}
+    \phi_k(x) = \frac{1}{(2\pi)^{D/2}} \frac{1}{|\Sigma_k|^{1/2}} e^{-\frac{1}{2} (x-\mu_k)^T \Sigma_k^{-1} (x-\mu_k)}
 $$
 
 We control the shift of the basis function using the mean vector $\mu_k$  but we force all covariance matrices to be identical and diagonal $\Sigma_k = \sigma\mathbf{I}$ for all $k$ so $\sigma$ is the parameter that controls the width of all the basis functions (in all directions).
