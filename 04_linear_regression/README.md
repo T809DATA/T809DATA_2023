@@ -106,6 +106,6 @@ prediction = [0.72174704 0.71462572 0.72048698 0.75382486 0.73161981 0.7494642
 - How good are these predictions?
 - Use plots to show the prediction accuracy, either by plotting the actual values vs predicted values or the mean-square-error.
 
-### Independent section (option)
+### Independent section (optional)
 This is a completely open ended independent section. You are free to test out the methods in the assignment on different datasets, change the models, change parameters, make visualizations, analyze the models, or anything you desire.
 
