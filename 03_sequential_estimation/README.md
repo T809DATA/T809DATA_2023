@@ -94,7 +94,12 @@ For a different distribution this plot looks like the following:
 Turn in your plot as `1_6_1.png`
 
 ### What to turn in to Gradescope
-You should edit `template.py` to include your own code. 
+*Read this carefully before you submit your solution.*
+
+You should edit `template.py` to include your own code.
+
+This is an individual project so you can of course help each other out but your code should be your own.
+
 You are not allowed to import any non-built in packages that are not already imported.
 
 Files to turn in:
@@ -105,6 +110,8 @@ Files to turn in:
 - `1_6_1.png`
 
 Make sure the file names are exact.
+Submission that do not pass the first two tests in Gradescope will not be graded.
+
 
 ## Independent Section (optional)
 What happens if the mean value changes (perhaps slowly) with time? What if  $\mu =(0,1,-1)$ moves to  $\mu=(1,-1,0)$ in 500 time ticks? How would we track the mean? Some sort of a forgetting could be added to the update equation. How would that be done?

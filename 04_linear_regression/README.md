@@ -107,7 +107,12 @@ prediction = [0.72174704 0.71462572 0.72048698 0.75382486 0.73161981 0.7494642
 - Use plots to show the prediction accuracy, either by plotting the actual values vs predicted values or the mean-square-error.
 
 ### What to turn in to Gradescope
-You should edit `template.py` to include your own code. 
+*Read this carefully before you submit your solution.*
+
+You should edit `template.py` to include your own code.
+ 
+This is an individual project so you can of course help each other out but your code should be your own.
+
 You are not allowed to import any non-built in packages that are not already imported.
 
 Files to turn in:
@@ -117,6 +122,7 @@ Files to turn in:
 - `1_5_1.txt`
 
 Make sure the file names are exact. 
+Submission that do not pass the first two tests in Gradescope will not be graded.
 
 
 ### Independent section (optional)
