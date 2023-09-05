@@ -9,15 +9,7 @@ The repository contains the following modules:
 * Assignment 1: [Decision Trees](01_decision_trees/README.md)
 * Assignment 2: [K-Nearest Neighbors](02_nearest_neighbours/README.md)
 * Assignment 3: [Sequential Estimation](03_sequential_estimation/README.md)
-* Assignment 4: [Classification Based on Probability](04_classification/README.md)
-* Assignment 5: [The Back-propagation Algorithm](05_backprop/README.md)
-* Assignment 6: [Applying Neural Networks](06_neural_networks/README.md)
-* Assignment 7: [Linear Models For Regression](07_linear_models/README.md)
-* Assignment 8: [Support Vector Machines](08_SVM/README.md)
-* Assignment 9: [Random Forests](09_random_forests/README.md)
-* Assignment 10: [Boosting](010_boosting/README.md)
-* Assignment 11: [K-Means and Gaussian Mixtures](011_k_means/README.md)
-* Assignment 12: [Principal Component Analysis](012_PCA/README.md)
+* Assignment 4: [Linear Models For Regression](04_linear_regression/README.md)
 
 
 We will add modules gradually throughout the course.
