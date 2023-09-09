@@ -67,7 +67,7 @@ Gradescope wil use `np.random.seed(1234)` before generating the data to test thi
 
 ### Section 1.5
 Lets plot the estimates on all dimensions as the sequence estimate gets updated. You can use `_plot_sequence_estimate()` as a template. You should:
-* Generate 100 3-dimensional points with the same mean and variance as above.
+* Generate 100 3-dimensional points with mean `[0, 0, 0]` and variance `4`.
 * Set the initial estimate as $(0, 0, 0)$
 * And perform `update_sequence_mean` for each point in the set.
 * Collect the estimates as you go
