@@ -48,6 +48,9 @@ You can also use `tools.bar_per_axis` to visualize the distribution of the data 
 
 Do you expect the batch estimate to be exactly $(0, 1, -1)$ ? Which two parameters can be used to make this estimate more accurate?
 
+### Section 1.3
+Continue to section `1.4`.
+
 ### Section 1.4
 We will now implement the sequential estimate.
 
