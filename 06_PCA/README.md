@@ -1,5 +1,5 @@
 # Principal Component Analysis
-Principal component analysis (PCA) is a technique to project data from higher dimension ($$D$$) to a lower dimension ($$M$$). There are a few reasons for why this is a good idea. It can, for example be a good pre-processing step for supervised classification or regression. Another reason to project the data to lower dimension is to visualize the data.
+Principal component analysis (PCA) is a technique to project data from higher dimension ($D$) to a lower dimension ($M$). There are a few reasons for why this is a good idea. It can, for example be a good pre-processing step for supervised classification or regression. Another reason to project the data to lower dimension is to visualize the data.
 
 In this exercise, we will examine principal component analysis for the breast cancer data set.
 
@@ -24,7 +24,7 @@ which corresponds tha malignant diagnosis (the target is `0`).
 To understand the importance of PCA we will start with a small experiment, simulating *naive PCA*.
 
 ### Section 1.1
-Create a function `standardize(x)` which takes in a $$[N \times f]$$ array and returns a standardized version of it. This function returns a $$[N \times f]$$ array $$\hat{X}$$ where
+Create a function `standardize(x)` which takes in a $[N \times f]$ array and returns a standardized version of it. This function returns a $[N \times f]$ array $\hat{X}$ where
 $$\hat{x_i} = \frac{x_i - \overline{x}}{\sigma_x}, \quad (\hat{x}_i, x_i, \overline{x}, \sigma_x) \in \mathbb{R}^f, \quad i \in 1,2,...,N$$
 
 Example input and output:
@@ -38,8 +38,8 @@ Example input and output:
 ```
 
 ### Section 1.2
-Finish the function `scatter_standardized_dims(X, i, j)` that takes in an array $$X$$ of shape $$[N \times f]$$ and plots a scatter plot for all points
-$$(\hat{X}_{ni}, \hat{X}_{nj}), \quad n = 1,2,...,N$$
+Finish the function `scatter_standardized_dims(X, i, j)` that takes in an array $X$ of shape $[N \times f]$ and plots a scatter plot for all points
+$(\hat{X}_{ni}, \hat{X}_{nj}), \quad n = 1,2,...,N$
 
 Example input and output:
 ```
@@ -116,13 +116,13 @@ Submit your plot as `2_1_1.png`.
 The variance in the data can be gauged through the eigenvalues of the covariance matrix. These are accessible in the `pca.explained_variance_` property. (Let's call them  $\lambda_i$ for simplicity).
 
 ### Section 3.1
-Plot the eigenvalues $$\lambda_i$$ as a function of $$i$$.
+Plot the eigenvalues $\lambda_i$ as a function of $i$.
 
 You can use `_plot_eigen_values` for this. Submit your plot as `3_1_1.png`.
 
 
 ### Section 3.2
-Plot the log (base 10) of the eigenvalues, i.e. $$\text{log}_{10}(\lambda_i)$$, as a function of $$i$$.
+Plot the log (base 10) of the eigenvalues, i.e. $\text{log}_{10}(\lambda_i)$, as a function of $$i$.
 
 You can use `_plot_log_eigen_values` for this. Submit your plot as `3_2_1.png`.
 
