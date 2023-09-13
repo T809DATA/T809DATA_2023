@@ -62,7 +62,7 @@ Example inputs and outputs:
 ```
 mean = np.mean(X, 0)
 new_x = gen_data(1, 3, np.array([0, 0, 0]), 1)
-update_sequence_mean(mean, new_x, X.shape[0])
+update_sequence_mean(mean, new_x, X.shape[0]+1)
 ```
 
 Results in an array, similar to `[[-0.21653761 -0.00721158 -0.15876203]]` (since we're using random numbers, the values you get will probably not be exactly the same).
