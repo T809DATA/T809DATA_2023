@@ -39,7 +39,8 @@ Example input and output:
 
 ### Section 1.2
 Finish the function `scatter_standardized_dims(X, i, j)` that takes in an array $X$ of shape $[N \times f]$ and plots a scatter plot for all points
-$(\hat{X}_{ni}, \hat{X}_{nj}), \quad n = 1,2,...,N$
+
+$$(\hat{X}_{ni}, \hat{X}_{nj}), \quad n = 1,2,...,N$$
 
 Example input and output:
 ```
@@ -90,9 +91,9 @@ You have now been introduced to a minified version of PCA. We will now do full P
 
 
 ### Section 2.1
-We will be using `sklearn.decomposition.PCA`, read more [here](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html). Create a new `pca = PCA()` instance and set `n_properties`, i.e. $$M$$, to $$D$$.
+We will be using `sklearn.decomposition.PCA`, read more [here](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html). Create a new `pca = PCA()` instance and set `n_properties`, i.e. $M$, to $D$.
 
-To fit `pca` to a set of features $$X$$, we do `pca.fit_transform(X)` which then applies the dimensionality reduction to $$X$$. You should be fitting the model to the standardized version of $$X$$.
+To fit `pca` to a set of features $X$, we do `pca.fit_transform(X)` which then applies the dimensionality reduction to $X$. You should be fitting the model to the standardized version of $X$.
 
 After that we can get the *components* (or eigenvectors) of the model with `pca.components_`.
 
