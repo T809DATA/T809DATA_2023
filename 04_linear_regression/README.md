@@ -106,6 +106,8 @@ prediction = [0.72174704 0.71462572 0.72048698 0.75382486 0.73161981 0.7494642
 - How good are these predictions?
 - Use plots to show the prediction accuracy, either by plotting the actual values vs predicted values or the mean-square-error.
 
+Submit your plots as `1_5_a.png`, `1_5_b.png`, etc.
+
 ### What to turn in to Gradescope
 *Read this carefully before you submit your solution.*
 
