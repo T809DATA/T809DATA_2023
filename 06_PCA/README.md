@@ -40,7 +40,9 @@ Example input and output:
 ### Section 1.2
 Finish the function `scatter_standardized_dims(X, i, j)` that takes in an array $X$ of shape $[N \times f]$ and plots a scatter plot for all points
 
-$$(\hat{X}_{ni}, \hat{X}_{nj}), \quad n = 1,2,...,N$$
+$$
+ (\hat{X} _{ni}, \hat{X} _{nj}), \quad n = 1,2,...,N
+$$
 
 Example input and output:
 ```
