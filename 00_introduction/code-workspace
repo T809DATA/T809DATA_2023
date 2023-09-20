@@ -1,0 +1,11 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "C:/Users/Yann/.venv/Scripts/python.exe",
+        "code-runner.executeorMap": {"python": "call C:/Users/Yann/.venv/Scripts/activate.bat && python -u"}
+    }
+}

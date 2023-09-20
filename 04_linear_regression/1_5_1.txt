@@ -1,0 +1,3 @@
+These predictions are not bad as the mean square error is close to zero.
+However, the machines does not reduce the error while learning. 
+We could try to implement this to optimise the algorithm.

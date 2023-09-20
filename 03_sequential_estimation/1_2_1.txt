@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+	#1.2
+	np.random.seed(1234)
+    	X = gen_data(300, 3, np.array([0, 1, -1]), 1.73)
+    	scatter_3d_data(X)
+    	bar_per_axis(X)
+
+The batch estimate is not exactly [0, 1, -1] because the mean of the normal 
+distribution is this value. Furthermore, the variance of 1.73 so it is a quite large curve.
+You can act upon the variance of the normal distribution or the number of samples 'n' to reduce the error.
+Reducing the value of the variance will reduce the width of the curve.
+Increasing the number of samples will also make the estimate more accurate.
