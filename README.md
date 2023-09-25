@@ -10,6 +10,8 @@ The repository contains the following modules:
 * Assignment 2: [K-Nearest Neighbors](02_nearest_neighbours/README.md)
 * Assignment 3: [Sequential Estimation](03_sequential_estimation/README.md)
 * Assignment 4: [Linear Models For Regression](04_linear_regression/README.md)
+* Assignment 5: [Classification Based on Probability](05_classification/README.md)
+* Assignment 6: [Principal Component Analysis](06_PCA/README.md)
 
 
 We will add modules gradually throughout the course.
