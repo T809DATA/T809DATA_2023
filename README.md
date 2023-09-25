@@ -12,6 +12,8 @@ The repository contains the following modules:
 * Assignment 4: [Linear Models For Regression](04_linear_regression/README.md)
 * Assignment 5: [Classification Based on Probability](05_classification/README.md)
 * Assignment 6: [Principal Component Analysis](06_PCA/README.md)
+* Assignment 7: [K-means Clustering](07_K_means/README.md)
+* Assignment 8: [Random Forests and Boosting](08_boosting/README.md)
 
 
 We will add modules gradually throughout the course.
