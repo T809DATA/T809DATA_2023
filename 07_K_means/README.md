@@ -123,7 +123,7 @@ You should run the algorithm `num_its` times. For each iteration we collect the 
 * `R`: The last value of the indicators
 * `Js`: List of $\hat{J}$ values for each iteration of the algorithm.
 
-Example input and output:
+Example input and output **(note: you might not get exactly the same result)**:
 ```
 X, y, c = load_iris()
 k_means(X, 4, 10)
@@ -176,7 +176,7 @@ To evaluate this we have to decide which cluster corresponds to which class labe
 
 Create a function `k_means_predict(X, t, classes, num_its)` that assigns class labels to clusters like explained above and returns the corresponding class predictions.
 
-Example input and output:
+Example input and output **(note: you might not get exactly the same result)**:
 ```
 X, y, c = load_iris()
 k_means_predict(X, y, c, 5)

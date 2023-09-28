@@ -38,7 +38,7 @@ def distance_matrix(
     where out[i, j] is the euclidian distance between X[i, :]
     and Mu[j, :]
     '''
-    ...
+    pass
 
 
 def determine_r(dist: np.ndarray) -> np.ndarray:
@@ -53,7 +53,7 @@ def determine_r(dist: np.ndarray) -> np.ndarray:
     out (np.ndarray): A [n x k] array where out[i, j] is
     1 if sample i is closest to prototype j and 0 otherwise.
     '''
-    ...
+    pass
 
 
 def determine_j(R: np.ndarray, dist: np.ndarray) -> float:
@@ -70,7 +70,7 @@ def determine_j(R: np.ndarray, dist: np.ndarray) -> float:
     Returns:
     * out (float): The value of the objective function
     '''
-    ...
+    pass
 
 
 def update_Mu(
@@ -90,7 +90,7 @@ def update_Mu(
     Returns:
     out (np.ndarray): A [k x f] array of updated prototypes.
     '''
-    ...
+    pass
 
 
 def k_means(
@@ -108,21 +108,21 @@ def k_means(
     nn = sk.utils.shuffle(range(X_standard.shape[0]))
     Mu = X_standard[nn[0: k], :]
 
-    ...
+    # !!! Your code here !!!
 
     # Then we have to "de-standardize" the prototypes
     for i in range(k):
         Mu[i, :] = Mu[i, :] * X_std + X_mean
 
-    ...
+    # !!! Your code here !!!
 
 
 def _plot_j():
-    ...
+    pass
 
 
 def _plot_multi_j():
-    ...
+    pass
 
 
 def k_means_predict(
@@ -146,15 +146,15 @@ def k_means_predict(
     Returns:
     * the predictions (list)
     '''
-    ...
+    pass
 
 
 def _iris_kmeans_accuracy():
-    ...
+    pass
 
 
 def _my_kmeans_on_image():
-    ...
+    pass
 
 
 def plot_image_clusters(n_clusters: int):
@@ -169,11 +169,3 @@ def plot_image_clusters(n_clusters: int):
     # uncomment the following line to run
     # plt.imshow(kmeans.labels_.reshape(w, h), cmap="plasma")
     plt.show()
-
-
-def _gmm_info():
-    ...
-
-
-def _plot_gmm():
-    ...

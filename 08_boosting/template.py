@@ -28,7 +28,7 @@ def get_better_titanic():
     Loads the cleaned titanic dataset but change
     how we handle the age column.
     '''
-    ...
+    pass
 
 
 def rfc_train_test(X_train, t_train, X_test, t_test):
@@ -36,7 +36,7 @@ def rfc_train_test(X_train, t_train, X_test, t_test):
     Train a random forest classifier on (X_train, t_train)
     and evaluate it on (X_test, t_test)
     '''
-    ...
+    pass
 
 
 def gb_train_test(X_train, t_train, X_test, t_test):
@@ -44,7 +44,7 @@ def gb_train_test(X_train, t_train, X_test, t_test):
     Train a Gradient boosting classifier on (X_train, t_train)
     and evaluate it on (X_test, t_test)
     '''
-    ...
+    pass
 
 
 def param_search(X, y):
@@ -79,12 +79,12 @@ def gb_optimized_train_test(X_train, t_train, X_test, t_test):
     and evaluate it on (X_test, t_test) with
     your own optimized parameters
     '''
-    ...
+    pass
 
 
 def _create_submission():
     '''Create your kaggle submission
     '''
-    ...
-    prediction = ...
+    pass
+    prediction = None # !!! Your prediction here !!!
     build_kaggle_submission(prediction)
