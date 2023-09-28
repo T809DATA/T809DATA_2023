@@ -90,7 +90,7 @@ Create a function `rfc_train_test(X_train, t_train, X_test, t_test)` that trains
 
 on `(X_test, t_test)`
 
-Example inputs and outputs:
+Example inputs and outputs *(note: you might not get exactly the same result)*:
 ```
 >>> rfc_train_test(tr_X, tr_y, tst_X, tst_y)
 (0.8097014925373134, 0.7708333333333334, 0.7184466019417476)
@@ -109,7 +109,7 @@ Create a function `gb_train_test(X_train, t_train, X_test, t_test)` that trains 
 
 on `(X_test, t_test)`
 
-Example inputs and outputs:
+Example inputs and outputs *(note: you might not get exactly the same result)*:
 ```
 >>> gb_train_test(tr_X, tr_y, tst_X, tst_y)
 (0.8208955223880597, 0.8313253012048193, 0.6699029126213593)
@@ -132,7 +132,7 @@ Fill in the blanks in the `param_search` function:
 
 By calling the function with the training features and training targets, it will perform the parameter search and return the best value of `n_estimators`, `max_depth` and `learning_rate` it can find.
 
-Example usages:
+Example usages *(note: you might not get exactly the same result)*:
 ```
 >>> param_search(tr_X, tr_y)
 (10, 2, 0.5)
