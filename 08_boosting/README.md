@@ -100,6 +100,7 @@ Example inputs and outputs *(note: you might not get exactly the same result)*:
 *This question should be answered in `2_2.txt`*
 
 Upload your choice of parameters and the accuracy, precision and recall on the test set.
+How or why did you choose those parameters?
 
 ### Section 2.3
 Create a function `gb_train_test(X_train, t_train, X_test, t_test)` that trains a `GradientBoostingClassifier` on `(X_train, t_train)` and returns:
