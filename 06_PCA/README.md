@@ -3,6 +3,8 @@ Principal component analysis (PCA) is a technique to project data from higher di
 
 In this exercise, we will examine principal component analysis for the breast cancer data set.
 
+### Dataset
+
 **About the Breast Cancer Dataset**:
 The dataset contains 569 samples. Each feature vector is 30-dimensional and each target label is either 0 (meaning benign) or 1 (meaning malignant). Each point has the following features (read left to right, top to bottom):
 
@@ -83,7 +85,7 @@ Submit your plot as `1_3_1.png`.
 
 Judging from all these plots, which dimensions do you think correlate best with the first dimension?
 
-Using the information [here](../08_SVM/README.md), what are the names of those features?
+Using the information about the dataset [here above](../06_PCA/README.md#Dataset), what are the names of those features?
 
 Can you explain why it makes sense that these are the dimensions that best correlate with the first one as opposed to the other dimensions?
 
