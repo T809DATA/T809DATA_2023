@@ -1,0 +1,12 @@
+The dimensions that correllate the best with the first dimension are those ones:
+
+1,1 - dimension 1: radius_mean
+
+1,3 - dimension 3: perimeter_mean
+1,4 - dimension 4: area_mean
+4,3 - dimension 21: radius_worst
+4,5 - dimension 23: perimeter_worst
+4,6 - dimension 24: area_worst
+
+As all the features are in fonction of the radius of the sample, it is obvious that they look similar
+In contrary, the other dimensions do not.

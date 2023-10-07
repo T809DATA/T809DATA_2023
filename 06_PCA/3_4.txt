@@ -1,0 +1,19 @@
+Eigenvalue plot:
+
+In this plot, every point represent the amount of variance explained by each compenent of our dataset.
+It has a rapide drop after the first component (principal component) because the first few components 
+capture the most important patterns and variance in the data. The rest of the components capture 
+the  minor variations and the noise.
+
+log eigenvalue plot:
+
+When the data is plot logarithmically, we can easily see how small get the values near to 0 in the 
+previous one. The values are decreasing almost lineary in this log plot. In reality it decreases 
+exponentially.
+
+cumulative variance plot:
+
+This plot shows the cumulative proportion of variance through all the components from 0% to 100%. 
+We can see that for the index number 0 (X=1) already 98% of the variance is reached. With the 
+index 1 and 2 100% is almost reached. Those 3 first dimensions can then be considered as determinant 
+for our dataset in term of variance inside the dataset.

@@ -1,0 +1,46 @@
+Yann DURIEZ - 2_2
+1. 
+
+After implementing a function to calculate the accuracy of each method, I get these results:
+Accuracy maximum likelihood : 96.61016949152543 %
+Accuracy maximum aposteriori: 96.61016949152543 %
+
+These accuracies are identical. As the samples given are random, the values change each run.
+
+2.
+
+After implementing the confusion matrice function, here are the results:
+likelihood method :
+[[17  0  0 ...  0  0  0]
+ [ 0 15  1 ...  0  0  0]
+ [ 0  1 25 ...  0  0  0]
+ ...
+ [ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]]
+
+aposteriori method:
+[[17  0  0 ...  0  0  0]
+ [ 0 15  1 ...  0  0  0]
+ [ 0  1 25 ...  0  0  0]
+ ...
+ [ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]]
+
+3.
+
+The prediction from each method result on the same accuracy. 
+From the different runs, we can see that the maximum likelihood (method 1) and the maximum 
+a posteriori (method 2) values are not similar.
+
+method 1:
+[[8.98 e-003 2.62 e-034 1.09 e-071]
+ [5.61 e+000 3.37 e-028 3.45 e-056]
+method 2:
+[[3.19 e-003 9.90 e-035 2.91 e-072]
+ [1.99 e+000 1.27 e-028 9.22 e-057]
+
+The differences between the values of the different classes in method 2 are more important than in the method 1,
+making it a better classifier. However, the prediction deduced from these values are the same. That is why
+we end up with the same accuracy.
