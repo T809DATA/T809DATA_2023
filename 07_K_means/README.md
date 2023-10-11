@@ -222,8 +222,8 @@ Try first running your own `k_means` function on the image data with `7` cluster
 
 Since our implementation is so slow, maybe we should try using an `sklearn` implementation, namely `sklearn.KMeans`.
 
-Finish implementing the function `plot_image_clusters`. In your PDF, show plots for `num_clusters=2, 5, 10, 20`.
-Name these plots as `2_1_1.png`-`2_1_4.png`.
+Finish implementing the function `plot_image_clusters`. Show plots for `num_clusters=2, 5, 10, 20`.
+Name these plots `2_1_1.png`-`2_1_4.png`.
 
 Here is an example with 5 clusters, but instead we use a *creepy clown*:
 
