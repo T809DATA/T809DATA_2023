@@ -14,6 +14,8 @@ The repository contains the following modules:
 * Assignment 6: [Principal Component Analysis](06_PCA/README.md)
 * Assignment 7: [K-means Clustering](07_K_means/README.md)
 * Assignment 8: [Random Forests and Boosting](08_boosting/README.md)
+* Assignment 9: [Neural Networks and Backpropagation](09_backprop/README.md)
+* Assignment 10: [Neural Network Design](10_neural_network_design/README.md)
 
 
 We will add modules gradually throughout the course.
