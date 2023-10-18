@@ -93,8 +93,8 @@ Assume sigmoid hidden and output activation functions and assume cross-entropy e
 
 The inner working of your `backprop` function should follow this order of actions:
 1. run `ffnn` on the input.
-2. calculate $\delta_k = y_k - target\_y_k$
-3. calculate $\delta_j = (\frac{d}{da}\sigma(a^{(1)}_j)) \sum_{k} w_{k,j+1}\delta_k$ (the `+1` is because of the bias weights)
+2. calculate $\delta_k = y_k - target\\_y_k$
+3. calculate $\delta_j = (\frac{d}{da} \sigma (a^{(1)}_j)) \sum_{k} w_{k,j+1} \delta_k$ (the `+1` is because of the bias weights)
 4. initialize `dE1` and `dE1` as zero-matrices with the same shape as `W1` and `W2`
 5. calculate `dE1_{i,j}` $= \delta_j z^{(0)}_i$  and `dE2_{j,k}` = $\delta_k z^{(1)}_j$
 
