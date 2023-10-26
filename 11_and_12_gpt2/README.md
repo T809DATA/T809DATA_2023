@@ -211,7 +211,7 @@ $$
 
 Create The Gelu function `gelu`.
 
-Example input and output: `gelu([[-1., 0.], [0.2,  1.]])` -> `[[-0.15880801  0.        ] [ 0.11585143  0.84119199]]`
+Example input and output: `gelu([[-1., 0.], [0.2,  1.]])` -> `[[-0.15880801  0.] [ 0.11585143  0.84119199]]`
 
 
 ### Section 1.2
@@ -306,11 +306,13 @@ Create a function `gpt2` that does the following steps:
 
 ### Section 2.4
 
-Use the generate function to run the model. Produce a few examples with your own input submit as `2_4.txt`.
+Use the `generate` function to run your model. Produce a few examples with your own input and submit as `2_4.txt`.
 You can use a bigger model to produce better results.
 To try different sized models change `model_size` to any of `["124M", "355M", "774M", "1558M"]`. keep in mind the bigger models will take more space on your computer and longer to run.
 
 Example input and output with the smallest model:
+
+**1. **
 
 ```
 generate(Hello! How are you?)
@@ -321,6 +323,8 @@ generate(Hello! How are you?)
 ```
 I'm a little bit nervous. I'm not sure if I'm going to be able to do this, but I'm going to be able to do it. I'm going to be
 ```
+
+**2. **
 
 ```
 generate(What is the weather like tomorrow?)
@@ -333,6 +337,8 @@ The weather is pretty good today. The weather is pretty good today.
 The weather is pretty good today. The weather is pretty good today.
 The weather is pretty good today
 ```
+
+**3. **
 
 ```
 generate(Tell me a story)
