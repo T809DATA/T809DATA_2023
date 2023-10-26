@@ -312,7 +312,7 @@ To try different sized models change `model_size` to any of `["124M", "355M", "7
 
 Example input and output with the smallest model:
 
-**1. **
+1.
 
 ```
 generate(Hello! How are you?)
@@ -324,7 +324,7 @@ generate(Hello! How are you?)
 I'm a little bit nervous. I'm not sure if I'm going to be able to do this, but I'm going to be able to do it. I'm going to be
 ```
 
-**2. **
+2.
 
 ```
 generate(What is the weather like tomorrow?)
@@ -338,7 +338,7 @@ The weather is pretty good today. The weather is pretty good today.
 The weather is pretty good today
 ```
 
-**3. **
+3.
 
 ```
 generate(Tell me a story)
