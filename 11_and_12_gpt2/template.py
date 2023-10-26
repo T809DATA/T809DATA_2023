@@ -71,7 +71,7 @@ def gpt2(inputs, wte, wpe, blocks, ln_f, number_of_heads):
     return x @ wte.T
 
 
-def generate(input_text, tokens_to_generate=40, model_size="124M", models_dir="models"):
+def generate(input_text, tokens_to_generate=40, model_size="124M", models_dir="models", loading_bar=True):
     assert model_size in ["124M", "355M", "774M", "1558M"]
     
     encoder = get_encoder(model_size, models_dir)
@@ -87,8 +87,13 @@ def generate(input_text, tokens_to_generate=40, model_size="124M", models_dir="m
 
     # generate output ids
     output_ids = []
-    for _ in tqdm(range(tokens_to_generate), "Thinking..."):
+    
+    if loading_bar:
+        loop_range = tqdm(range(tokens_to_generate), "Thinking...")
+    else:
+        loop_range = range(tokens_to_generate)
 
+    for _ in loop_range:
         # Call our gtp2 model with input plus generated tokens
         output = gpt2(input_ids + output_ids, **params, number_of_heads=number_of_heads) 
 
