@@ -1,12 +1,12 @@
 
 # Multi-head attention
 
-The goal of the next two exercices is to delve deeper into Neural Network archetecture.
+The goal of the next two exercices is to delve deeper into Neural Network architecture.
 We will be implementing the GPT2 model from scratch including multi head attention with masking and transformer blocks.
 
-In this exercise we take a closer look at the attention layer and create a multi head attantion function.
+In the first part of the assignment we take a closer look at the attention layer and create a multi head attantion function.
 
-In the second exercise we finish our basic functions and create the transformer blocks.
+In the second assignment we finish our utility functions and create model.
 
 Note: to run the code you must install the requirements in `requirements.txt`. You can do this with pip by running something like:
 
