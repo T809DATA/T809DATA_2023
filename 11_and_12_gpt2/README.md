@@ -78,7 +78,7 @@ Example input and output:
 ### Section 1.3
 
 Now we add a mask to the attention function.
-Create a function `maked_attention` that has an additional input parameter `mask`.
+Create a function `masked_attention` that has an additional input parameter `mask`.
 
 $$
 	Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}} + mask)V

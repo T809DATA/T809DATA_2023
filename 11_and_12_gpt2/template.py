@@ -74,8 +74,8 @@ def gpt2(inputs, wte, wpe, blocks, ln_f, number_of_heads):
 def generate(input_text, tokens_to_generate=40, model_size="124M", models_dir="models", loading_bar=True):
     assert model_size in ["124M", "355M", "774M", "1558M"]
     
-    encoder = get_encoder(model_size, models_dir)
     hparams, params = get_params(model_size, models_dir)
+    encoder = get_encoder(model_size, models_dir)
     number_of_heads = hparams["n_head"]
     max_context = hparams["n_ctx"]
 
