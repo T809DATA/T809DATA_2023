@@ -41,7 +41,7 @@ Create the Softmax function `softmax(x)`, our input `x` is a matrix where each r
 
 Hint: Use `keepdims=True`
 
-Example input and output: `softmax(np.array([[-1, 0,], [0.2, 1]])` -> `array([[0.26894142, 0.73105858], [0.31002552, 0.68997448]])`
+Example input and output: `softmax(np.array([[-1.   0. ], [ 0.2  1. ]]))` -> `[[0.26894142 0.73105858], [0.31002552 0.68997448]]`
 
 
 
@@ -60,7 +60,20 @@ inputs:
 Hint: Use `@` for matrix multiplication.
 
 Example input and output:
-* `attention(...)`
+```
+    np.random.seed(4321)
+    q = np.random.rand(3,2)
+    k = np.random.rand(3,2)
+    v = np.random.rand(3,2)
+    x = attention(q, k, v)
+```
+-> 
+
+```
+    [[0.37285946 0.73278279]
+     [0.36712163 0.72522747]
+     [0.36637032 0.72842298]]
+```
 
 ### Section 1.3
 
@@ -72,7 +85,30 @@ $$
 $$
 
 Example input and output:
-* `masked_attention(...)`
+```
+np.random.seed(4321)
+        nf = 10
+        q = np.random.rand(nf,2)
+        k = np.random.rand(nf,2)
+        v = np.random.rand(nf,2)
+        mask = (1 - np.tri(nf)) * -1e10
+        x = masked_attention(q, k, v, mask)
+```
+
+->
+
+```
+    [[0.37646796 0.24378126]
+     [0.48299578 0.28439644]
+     [0.46590072 0.41837738]
+     [0.52991302 0.51314059]
+     [0.49214214 0.55574465]
+     [0.39568092 0.59955323]
+     [0.38462954 0.61108759]
+     [0.37248739 0.5645996 ]
+     [0.35915127 0.57331419]
+     [0.41913397 0.51187079]]
+```
 
 
 ## Section 2
@@ -87,6 +123,24 @@ $$
 
 Both inputs `x` and `w` are matrices.
 
+
+Example input and output:
+
+```
+    np.random.seed(4321)
+    x = np.random.rand(3,2)
+    w = np.random.rand(2,3)
+    b = np.random.rand(3,1)
+    lp = linear_projection(x, w, b)
+```
+
+->
+
+```
+    [[0.49964645 0.7764272  0.59947811]
+     [1.0642018  1.42264665 0.86367775]
+     [1.06047186 1.43087917 1.14610938]]
+```
 ### Section 2.2
 
 Now lets create the multi head attention layer in our GPT2 Model.
@@ -106,6 +160,27 @@ Create a function `multi_head_attention`, the function should perform the follow
 
 Use the `mask` given in the code.
 
+Example input and output:
+
+```
+    np.random.seed(4321)
+    x = np.random.rand(3,4)
+    w_1 = np.random.rand(4,12)
+    b_1 = np.random.rand(3,1)
+    w_2 = np.random.rand(4,3)
+    b_2 = np.random.rand(3,1)
+    attn = {"c_attn": {"w": w_1, "b": b_1}, "c_proj": {"w": w_2, "b": b_2}}
+    x = multi_head_attention(x, attn, 2)
+
+```
+
+->
+
+```
+    [[3.4897257  2.74884012 2.6448295 ]
+     [3.15425828 2.46024887 2.34563449]
+     [3.22513764 2.50993895 2.38375606]]
+```
 
 ## What to turn in to Gradescope
 *Read this carefully before you submit your solution.*
@@ -188,7 +263,7 @@ Create a function `transformer_block` that does the following steps:
 Create a function `gpt2` that does the following steps:
 
 1. Get word and positional embedding (given)
-2. Forward pass through all transformer blocks
+2. Forward pass through all transformer blocks in `blocks`
 3. Layer normalization with `g_final` and `b_final`
 4. Map back from embedding to vocabulary (given)
 
