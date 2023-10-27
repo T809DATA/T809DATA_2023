@@ -211,7 +211,7 @@ $$
 
 Create The Gelu function `gelu`.
 
-Example input and output: `gelu([[-1., 0.], [0.2,  1.]])` -> `[[-0.15880801  0.] [ 0.11585143  0.84119199]]`
+Example input and output: `gelu(np.array([[-1., 0.], [0.2,  1.]]))` -> `[[-0.15880801  0.] [ 0.11585143  0.84119199]]`
 
 
 ### Section 1.2
@@ -289,8 +289,9 @@ Create a function `transformer_block` that does the following steps:
 
 1. First layer normalization with `g_1` and `b_1`
 2. Forward pass through multi head attention
-3. Add input x and store
-4. Second layer normalization with `g_2` and `b_2`
+3. Add input x
+4. Store x for later
+5. Second layer normalization with `g_2` and `b_2`
 6. Forward pass through feed forward network
 7. Add stored x
 
@@ -315,7 +316,7 @@ Example input and output with the smallest model:
 1.
 
 ```
-generate(Hello! How are you?)
+generate("Hello! How are you?")
 ``` 
 
 -> 
@@ -327,7 +328,7 @@ I'm a little bit nervous. I'm not sure if I'm going to be able to do this, but I
 2.
 
 ```
-generate(What is the weather like tomorrow?)
+generate("What is the weather like tomorrow?")
 ``` 
 
 -> 
@@ -341,7 +342,7 @@ The weather is pretty good today
 3.
 
 ```
-generate(Tell me a story)
+generate("Tell me a story")
 ```
 
  -> 

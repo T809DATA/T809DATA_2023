@@ -26,6 +26,7 @@ def linear_projection(x, w, b):
 def multi_head_attention(x, attn, number_of_heads):
     w_1, b_1 = attn["c_attn"]["w"], attn["c_attn"]["b"]
     w_2, b_2 = attn["c_proj"]["w"], attn["c_proj"]["b"]
+    mask = (1 - np.tri(x.shape[0], dtype=x.dtype)) * -1e10
     """
         Your code here
     """
