@@ -2,13 +2,18 @@
 # Multi-head attention
 
 The goal of the next two exercices is to delve deeper into Neural Network architecture.
-We will be implementing the GPT2 model from scratch including multi head attention with masking and transformer blocks.
+We will be implementing the GPT2 model[1] from scratch including multi head attention with masking and transformer blocks[2].
+You can find (and use for support) the original code here: [gpt-2](https://github.com/openai/gpt-2/blob/master/README.md).
 
 In the first part of the assignment we take a closer look at the attention layer and create a multi head attantion function.
 
 In the second assignment we finish our utility functions and create model.
 
 Note: to run the code you must install the requirements in `requirements.txt`. You can do this with pip by running something like:
+
+[1]: ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf)
+[2]: ["Attention is all you need"](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
+
 
 ```
 # If you are using a virtual environment, make sure it is activated before you install the requirements
@@ -216,7 +221,7 @@ Example input and output: `gelu(np.array([[-1., 0.], [0.2,  1.]]))` -> `[[-0.158
 
 ### Section 1.2
 
-Create a function `layer_normalization` that normalizes and scales an input matrix `x` **row-wise** with `gamma` and `beta`.
+Create a function `layer_normalization` that normalizes and scales an input matrix `x` **row-wise** with `gamma` and `beta` similar to [this paper](https://arxiv.org/abs/1607.06450).
 
 $$
     h = g \odot N(x) + b, N(x) = \frac{x-\mu}{\sqrt{\sigma+\epsilon}}
