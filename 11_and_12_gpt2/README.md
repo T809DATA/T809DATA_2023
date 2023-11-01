@@ -3,7 +3,7 @@
 
 The goal of the next two exercices is to delve deeper into Neural Network architecture.
 We will be implementing the GPT2 model [1] from scratch including multi head attention with masking and transformer blocks [2].
-You can find (and use for support) the original code here: [gpt-2](https://github.com/openai/gpt-2/blob/master/README.md).
+You can find (and use for support) the original code here: [gpt-2](https://github.com/openai/gpt-2/blob/master).
 
 In the first part of the assignment we take a closer look at the attention layer and create a multi head attantion function.
 
