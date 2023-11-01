@@ -306,7 +306,7 @@ Create a function `transformer_block` that does the following steps:
 
 Create a function `gpt2` that does the following steps:
 
-1. Get word and positional embedding (given)
+1. Sum word and positional encoding (given)
 2. Forward pass through all transformer blocks in `blocks`
 3. Layer normalization with `g_final` and `b_final`
 4. Map back from embedding to vocabulary (given)
