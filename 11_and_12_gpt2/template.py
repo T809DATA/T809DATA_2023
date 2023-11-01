@@ -65,7 +65,7 @@ def transformer_block(x, block, number_of_heads):
 
 def gpt2(inputs, wte, wpe, blocks, ln_f, number_of_heads):
     g_final, b_final = ln_f["g"], ln_f["b"]
-    x = wte[inputs] + wpe[range(len(inputs))]  # Step 1: Add positional encoding to token encoding 
+    x = wte[inputs] + wpe[range(len(inputs))]  # Step 1: Sum positional encoding and token encoding 
     """
         Your code here
     """
